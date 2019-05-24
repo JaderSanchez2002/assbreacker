@@ -1,9 +1,9 @@
 <?php 
 
 require_once("Views/Layout/header.php");
-require_once("Views/CarrerasViews/carrerasDestacadas.php");
+require_once("Controllers/carrerasController.php");
 
-/*ob_start();
+ob_start();
 session_start();
 require_once("Configurations/conexion.php");
 
@@ -24,20 +24,20 @@ if (isset($_GET['controller']) && isset($_GET['action'])) {
 			$controlador->$accion();
 		}
 		else{
-			header("location: index.php?controller=Works&action=ultimos_trabajos");
+			header("location: index.php?controller=carreras&action=carrerasDestacadas");
 		}
 
 	}
 	else{
-		header("location: index.php?controller=Works&action=ultimos_trabajos");
+		header("location: index.php?controller=carreras&action=carrerasDestacadas");
 	}
 
 }
 else{
-	header("location: index.php?controller=Works&action=ultimos_trabajos");
+	header("location: index.php?controller=carreras&action=carrerasDestacadas");
 
 }
-*/
+
 require_once("Views/Layout/footer.php");
 
  ?>

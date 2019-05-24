@@ -70,6 +70,10 @@ a.nav-link:hover{
 	font-weight: bolder;
 }
 
+img.img-titulo{
+	width: 9%;
+}
+
 footer{
 	bottom: 0;
 }
@@ -84,11 +88,13 @@ div.carrera{
 	width: 25%;
 	margin: 4.1%;
 	float: left;
-	transition: 300ms all;
+	transition: 500ms all;
 }
 
 div.carrera:hover{
 	background-image: linear-gradient(gray, gray, white);
+	transform: scale(1.2);
+	box-shadow: 5px 5px 3px gray;
 }
 
 div.carrera img{
